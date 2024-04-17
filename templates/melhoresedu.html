@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Melhores Edu</title>
+        <style>
+
+        .letter {
+            font-family: 'Quicksand', sans-serif;
+            color: #0f0;
+        }
+        body {
+          min-height: 100vh;
+          background: #181818;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="letter">70 CIDADES COM MELHOR EDUCAÇÃO</h1>
+
+    <button id="salvarMelhorDado">Salvar Melhor Dado</button>
+
+    {{plot|safe}}
+
+    <script>
+        document.getElementById("salvarMelhorDado").addEventListener("click", function() {
+            fetch("/salvar_melhor_dado", {
+                method: "POST"
+            }).then(response => {
+                if (response.ok) {
+                    alert("Melhor dado salvo com sucesso! Seu valor é: 99");
+                } else {
+                    alert("Ocorreu um erro ao salvar o melhor dado.");
+                }
+            }).catch(error => {
+                console.error("Erro ao enviar solicitação:", error);
+            });
+        });
+
+    </script>
+</body>
+</html>

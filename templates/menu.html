@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduData</title>
+  <style>
+    * {
+  padding: 0;
+  margin: 0;
+  color: #1a1f36;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Ubuntu,sans-serif;
+}
+body {
+    min-height: 100%;
+    background-color: #181818;
+}
+h1 {
+    letter-spacing: -1px;
+    color: #00FF00;
+}
+a {
+  color: #5469d4;
+  text-decoration: unset;
+}
+
+
+.flex-flex {
+    display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.center-center {
+  align-items: center;
+  justify-content: center;
+}
+.box-root {
+    box-sizing: border-box;
+}
+.flex-direction--column {
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+
+.padding-top--64 {
+  padding-top: 64px;
+}
+.padding-top--24 {
+  padding-top: 24px;
+}
+.padding-top--48 {
+  padding-top: 48px;
+}
+.padding-bottom--24 {
+  padding-bottom: 24px;
+}
+.padding-horizontal--48 {
+  padding: 48px;
+}
+.padding-bottom--15 {
+  padding-bottom: 15px;
+}
+
+
+.flex-justifyContent--center {
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.formbg {
+    margin: 0px auto;
+    width: 100%;
+    max-width: 448px;
+    background: #333;
+    border-radius: 4px;
+    box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+}
+span {
+    display: block;
+    font-size: 20px;
+    line-height: 28px;
+    color: #1a1f36;
+}
+label {
+    margin-bottom: 10px;
+}
+.reset-pass a,label {
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+}
+.reset-pass > a {
+    text-align: right;
+    margin-bottom: 10px;
+}
+.grid--50-50 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.field input {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 8px 16px;
+    width: 100%;
+    min-height: 44px;
+    border: unset;
+    border-radius: 4px;
+    outline-color: rgb(84 105 212 / 0.5);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+                rgba(60, 66, 87, 0.16) 0px 0px 0px 1px,
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+
+ input[type="submit"] {
+        background-color: #00FF00; /* Defina a cor de fundo como verde (#00FF00) */
+        box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+                    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+                    rgba(0, 0, 0, 0.12) 0px 1px 1px 0px,
+                    #00FF00 0px 0px 0px 1px, /* Adiciona uma borda verde ao redor do botão */
+                    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+                    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+                    rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+        color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+    }
+.field-checkbox input {
+    width: 20px;
+    height: 15px;
+    margin-right: 5px;
+    box-shadow: unset;
+    min-height: unset;
+}
+.field-checkbox label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+a.ssolink {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+}
+.footer-link span {
+    font-size: 14px;
+    text-align: center;
+}
+.listing a {
+    color: ##00FF00;
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+</style>
+
+</head>
+
+<body>
+  <div class="login-root">
+    <div class="box-root flex-flex flex-direction--column" style="min-height: 100vh;flex-grow: 1;">
+      <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
+        <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
+          <h1>EDUDATA</h1>
+        </div>
+        <div class="formbg-outer">
+          <div class="formbg">
+            <div class="formbg-inner padding-horizontal--48">
+
+              <div class="field padding-bottom--24">
+                  <input type="submit" name="submit" value="PIB X IDHM" onclick="window.location.href='/pibxidhm';">
+              </div>
+              <div class="field padding-bottom--24">
+                  <input type="submit" name="submit" value="IDHM X FUNDAMENTAL" onclick="window.location.href='/idhmxfundamental';">
+              </div>
+              <div class="field padding-bottom--24">
+                  <input type="submit" name="submit" value="IDHM X MEDIO" onclick="window.location.href='/idhmxmedio';">
+              </div>
+              <div class="field padding-bottom--24">
+                  <input type="submit" name="submit" value="IDHM X ESCOLARIZAÇÂO 6 A 14 ANOS" onclick="window.location.href='/idhmxescolarizacao';">
+              </div>
+              <div class="field padding-bottom--24">
+                  <input type="submit" name="submit" value="70 CIDADES COM A MELHOR EDUCAÇÃO" onclick="window.location.href='/melhoresedu';">
+              </div>
+               <div class="field padding-bottom--24">
+                  <input type="submit" name="submit" value="MEDIO E FUNDAMENTAL" onclick="window.location.href='/medioefundamental';">
+              </div>
+              <div class="field padding-bottom--24">
+                  <input type="submit" name="submit" value="MATRIZ DE CORRELAÇÃO" onclick="window.location.href='/grafcorrelacao';">
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

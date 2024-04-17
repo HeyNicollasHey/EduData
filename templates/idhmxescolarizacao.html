@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IDHM X ESCOLARIZAÇÂO</title>
+    <style>
+        .letter {
+            font-family: 'Quicksand', sans-serif;
+            color: #0f0;
+        }
+        body {
+          min-height: 100vh;
+          background: #181818;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="letter">IDHM X ESCOLARiZAÇÂO 6 A 14 ANOS</h1>
+
+    <form action="/idhmxescolarizacao" method="POST">
+        <label class="letter">Digite a quantidade de cidades que você quer filtrar</label>
+        <input type="text" name="valor">
+        <button type="submit">Filtrar</button>
+    </form>
+
+    {{ plot | safe }}
+</body>
+</html>
